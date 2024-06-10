@@ -1,59 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gaspar </title>
+    <title>Optimus</title>
 </head>
 <body>
+    <div class="container">
+        
+        <div class="content">
 
-    <!-- Intro Section  -->
-    <div class="nav">
-        <img src="../assets/regular_expression_48dp_FILL0_wght400_GRAD0_opsz48.png" alt="" class="logo">
+            <div class="me">
+                <img src="" alt="" class="profile">
+            </div>
 
-        <ul class="nav_links">
-            <li><a href="#home"> Home </a></li>
-            <li><a href="#About"> About </a></li>
-            <li><a href="Skills"> Skills</a></li>
-            <li><a href="Services"> Services</a></li>
-            <li><a href="#Contact">Contact</a></li>
-        </ul>
-    </div>
-
-    <div class="intro">
-        <img src="../assets/gc.png" alt="" class="profp">
-
-        <div class="intro-stuff">
-            <h1>
-                Gaspar Chichava
-            </h1>
-
-            <p>
-                I'm a front-end Developer
-            </p>
-            
-           <!--
-
-            <button class="learn">
-                <a href="#about">
-                    Learn More
-                </a>
-            </button>
-
-           --> 
-
-           
-        <div class="learn">
-            
-             <a href="about"> Learn More</a> 
-            
-        </div>
+            <div class="nav_links">
+                <ul class="links">
+                    <li><a href="home.html" target="mainIframe">Home</a></li>
+                    <li><a href="about.html" target="mainIframe">About</a></li>
+                    <li><a href="resume.html" target="mainIframe">Resume</a></li>
+                    <li><a href="portfolio.html" target="mainIframe">Portfolio</a></li>
+                    <li><a href="contact.html" target="mainIframe">Contact</a></li>
+                    
+                </ul>
+            </div>
 
         </div>
-     
-    </div>
 
-    
+        <div class="main">
+            <iframe name="mainIframe" src="home.html" frameborder="0"></iframe>
+        </div>
+    </div>
 </body>
 </html>
