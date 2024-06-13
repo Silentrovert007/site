@@ -4,6 +4,14 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+.index {
+    overflow: hidden;
+}
+
+
 .container{
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -146,25 +154,23 @@
     margin: 10px;
 }
 .resume-container {
-    padding: 20px;
     display: grid;
     grid-template-columns: 3fr 2fr;
     grid-template-rows: 1fr 3.5fr;
-    background-color: beige;
     height: 100%;
+
 }
 
 .name-post-contact {
-    background-color: red;
     grid-column: 1 /-1;
     padding: 10px;
-    border-bottom: 5px solid white;
 
 }
 
 .name-post-contact > .lobster > h1 {
     letter-spacing: 3px;
     font-size: 3.5rem;
+    color: blue;
     text-transform: uppercase;
 } 
 
@@ -173,6 +179,7 @@
     text-transform: uppercase;
     letter-spacing: 10px;
     line-height: 1;
+    color: rgb(192, 187, 187);
 }
 
 .name-post-contact > .lobster > .contact-info {
@@ -181,25 +188,44 @@
     list-style-position: none ;
     position: relative;
     top: 30px;
+    color: rgb(92, 92, 170);
 }
 
 .name-post-contact > .lobster > .contact-info > li {
     display: inline;
-    margin-right: 10px;
+    margin-right: 5px;
     letter-spacing: 1.2px;
+    font-size: 1.1rem;
+    line-height: 3;
+}
+
+.experience-projects, .education-skills {
+    margin-top: 2%;
+    padding: 10px;
+}
+.experience-projects > h2 { 
+    font-size: 3rem;
+    color: #c0bbbb;
+    letter-spacing: 2px;
+    font-weight: lighter;
+    margin-top: 30px;
+
+}
+
+.experience-projects > .sub, .sub{
+    margin-top: 10px;
+    color: #cfa4a4;
+    letter-spacing: 2px;
+    padding-left: 5px;
     font-size: 1.2rem;
 }
-
-
-
-
-
-
-.experience-projects{
-background-color: blue;
+.experience-projects > .sub2, .sub2 {
+    margin-top: 5px;
+    color: #cfa4a4;
+    letter-spacing: 2px;
+    padding-left: 5px;
+    font-size: 1rem;
 }
-
 .education-skills{
-    background-color: aqua;
-    height: 100%;
+    color: none;
 }
