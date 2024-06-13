@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .container{
@@ -48,7 +49,7 @@
 
 .content > footer {
     position: relative;
-    top: 11px;
+    top: 90px;
     color: rgb(192, 187, 187);
 }
 
@@ -136,4 +137,69 @@
 .intro-fase > .icons > .icons-desc > li > a > .fab {
     color: blue;
     
+}
+
+
+/*--------------------------------- RESUME PAGE ------------------------------------*/
+.all-resume{
+    height: 100%;
+    margin: 10px;
+}
+.resume-container {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 1fr 3.5fr;
+    background-color: beige;
+    height: 100%;
+}
+
+.name-post-contact {
+    background-color: red;
+    grid-column: 1 /-1;
+    padding: 10px;
+    border-bottom: 5px solid white;
+
+}
+
+.name-post-contact > .lobster > h1 {
+    letter-spacing: 3px;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+} 
+
+.name-post-contact > .lobster > p {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    line-height: 1;
+}
+
+.name-post-contact > .lobster > .contact-info {
+    list-style: none;
+    list-style-type: none;
+    list-style-position: none ;
+    position: relative;
+    top: 30px;
+}
+
+.name-post-contact > .lobster > .contact-info > li {
+    display: inline;
+    margin-right: 10px;
+    letter-spacing: 1.2px;
+    font-size: 1.2rem;
+}
+
+
+
+
+
+
+.experience-projects{
+background-color: blue;
+}
+
+.education-skills{
+    background-color: aqua;
+    height: 100%;
 }
