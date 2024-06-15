@@ -4,12 +4,13 @@
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
 
         table {
                 margin-left: 0px;
                 margin-top: 20px;
-                width: 100%;
+                width: 90%;
                 border-collapse: collapse;
             }
             th, td {
@@ -33,6 +34,18 @@
                 padding-top: 10px;
             }
 
+
+            .last-list > li {
+                margin-top: 10px;
+                color: white;
+                list-style: none;
+                list-style-type: none;
+                text-transform: capitalize;
+            }
+
+            .spacing {
+                margin-top: 1.5rem;
+            }
         
     </style>
     
@@ -54,29 +67,32 @@
             </p>
 
             <ul class="contact-info">
-                <li><span>Phone:</span> +258-843-692-104</li>
+                <li><i class="fas fa-phone"></i> <a href="tel:+258843692104" target="_blank">+258 853 692 104</a></li>
                 <li>|</li>
-                <li><span>Email:</span> gasparc.chichava@gmail.com</li>
+                <li><i class="fas fa-envelope"></i> <a href="mailto:gasparc.chichava@gmail.com?subject=Subject%20Here&body=Message%20body" target="_blank">gasparc.chichava@gmail.com</a></li>
                 <li>|</li>
-                <li><span>Address:</span> Hulene B, Maputo, Mozambique</li>
-                <li><span>Github:</span> Silentrovert007</li>
+                <li><i class="fas fa-map-marker-alt"></i> Hulene "B" Maputo, Mozambique</li>
                 <li>|</li>
-                <li><span>In:</span> Gaspar Mario Chichava</li>
+                <li><i class="fab fa-github"></i> <a href="https://github.com/Silentrovert007" target="_blank">Silentrovert007</a></li>
+                <li>|</li>
+                <li><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/gaspar-mario-chichava" target="_blank">Gaspar Mario Chichava</a></li>
                 <li></li>
             </ul>
 
-        </div>
-       <hr style="position: relative; top: 35px; color: #c0bbbb;">
+        </div><!--
+            <hr style="position: relative; top: 35px; color: #c0bbbb;">>
+        -->
+       
     </div>
 
     <div class="experience-projects ">
         <h2>
             Experience
         </h2>
-        <p class="sub">
+        <p class="sub-a">
             University projects:
         </p>
-        <p class="sub2">
+        <p class="sub-b">
             IUT de Blagnac
         </p>
 
@@ -110,7 +126,7 @@
             </tbody>
         </table>
 
-        <table>
+        <table class="spacing">
             <thead>
                 <tr>
                     <th>Database Creation</th>
@@ -143,10 +159,10 @@
             </tbody>
         </table>
 
-        <table>
+        <table class="spacing">
             <thead>
                 <tr>
-                    <th>Discovery of the economic environment of two companies</th>
+                    <th>Discovery of economic environment</th>
                     <th>December 2022</th>
                 </tr>
             </thead>
@@ -155,7 +171,10 @@
                     <td colspan="2">
                         <ul style="list-style: none; list-style-type: none;" class="listing">
                             <li>
-                                Researches related to their economic activities
+                                Finding two companies
+                            </li>
+                            <li>
+                                conduct researches related to their economic activities
                             </li>
 
                             <li>
@@ -173,7 +192,7 @@
             </tbody>
         </table>
         
-        <table>
+        <table class="spacing">
             <thead>
                 <tr>
                     <th>Collection of needs</th>
@@ -204,7 +223,7 @@
             </tbody>
         </table>
 
-        <table>
+        <table class="spacing">
             <thead>
                 <tr>
                     <th>Development of an arbitration application.</th>
@@ -243,7 +262,102 @@
 
 
     <div class="education-skills">
+        <h2>
+            Education
+        </h2>
+         <h3 class="sub">
+            Carreer Pause
+         </h3>
+         <p class="sub2">
+            Reason: Health Care
+         </p>
+         <p class="sub3">
+            Year 2023 - 2024
+         </p>
+        <h3 class="sub" style="margin-top: 20px;">
+            Bachelor of computer science
+        </h3>
+        <p class="sub2 center1"> Université de toulouse Jean Jaurès - IUT de Blagnac </p>
+        <p class="sub3 center1">Year 2022 - 2023</p>
+
+        <h3 class="sub" style="margin-top: 20px;">
+            French as foreign language
+        </h3>
+        <p class="sub2 center1"> Centro Cultural Franco-Moçambicano</p>
+        <p class="sub3 center1"> Year 2022</p>
+
+        <h2 class="skills beta">
+            Technical skills
+        </h2>
         
+        <h3 class="skills-list-headers">
+            Programming:
+        </h3>
+        <p class="list">
+            Python, Javascript
+        </p>
+        <h3 class="skills-list-headers"> Frontend development:</h3>
+        <p class="list">HTML5, CSS3</p>
+
+        <h3 class="skills-list-headers">Databases:</h3>
+        <p class="list">Oracle SQL, MySQL</p>
+        <h3 class="skills-list-headers">
+            Systems:
+        </h3>
+        <p class="list">
+            Windows 10, Linux-Ubuntu (Command Line Interface)
+        </p>
+        <h3 class="skills-list-headers">
+            Tools:
+        </h3>
+        <p class="list">
+            Pycharm, VSCode, Git & Github
+        </p>
+        <h2 class="skills beta">
+            Soft Skills
+        </h2>
+       
+            <h3 class="skills-list-headers">
+                Personal
+            </h3>
+            <ul class="last-list">
+                <li>Curiosity</li>
+                <li>Imagination</li>
+                <li>Methodic person</li>
+            </ul>
+            
+            <h3 class="skills-list-headers">
+                Inter-personal
+            </h3>
+            <ul class="last-list">
+            <li>
+                comunicative
+            </li>
+            <li>
+                indempendent
+            </li>
+            <li>
+                Responsible
+            </li>
+        </ul>
+    
+    </div>
+
+    <div class="more-info">
+        <ul class="first head">
+            <h3>Spoken Languages</h3>
+            <li>Portuguese</li>
+            <li>English</li>
+            <li>French</li>
+        </ul>
+
+        <ul class="second head">
+            <h3>Hobbies</h3>
+            <li>Hiking</li>
+            <li>Chess</li>
+            <li>Writing</li>
+        </ul>
+
     </div>
 
 

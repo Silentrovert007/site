@@ -72,8 +72,9 @@
  }
 
 .main {
+    background-color: rgba(1, 1, 5, 0.945);
     position: relative;
-    background-image: url(../assets/data.jpeg);
+    /*background-image: url(../assets/data.jpeg);*/
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -155,8 +156,8 @@
 }
 .resume-container {
     display: grid;
-    grid-template-columns: 3fr 2fr;
-    grid-template-rows: 1fr 3.5fr;
+    grid-template-columns: 4fr 2fr;
+    grid-template-rows: 1fr 3.5fr, 1fr;
     height: 100%;
 
 }
@@ -172,6 +173,7 @@
     font-size: 3.5rem;
     color: blue;
     text-transform: uppercase;
+    margin-bottom: 5px;
 } 
 
 .name-post-contact > .lobster > p {
@@ -187,45 +189,119 @@
     list-style-type: none;
     list-style-position: none ;
     position: relative;
-    top: 30px;
+    top: 20px;
     color: rgb(92, 92, 170);
 }
 
 .name-post-contact > .lobster > .contact-info > li {
     display: inline;
-    margin-right: 5px;
+    margin-right: 20px;
     letter-spacing: 1.2px;
     font-size: 1.1rem;
     line-height: 3;
+    color: blue;
 }
 
-.experience-projects, .education-skills {
+.name-post-contact > .lobster > .contact-info > li > a {
+    text-decoration: none;
+    color: blue;
+}
+
+.experience-projects,.education-skills{
     margin-top: 2%;
     padding: 10px;
+    border-top: 3px solid rgb(71, 70, 70);
 }
-.experience-projects > h2 { 
+
+.experience-projects {
+    border-right: 3px solid rgb(71, 70, 70);
+}
+.experience-projects > h2, .education-skills > h2 { 
     font-size: 3rem;
     color: #c0bbbb;
     letter-spacing: 2px;
     font-weight: lighter;
-    margin-top: 30px;
+    margin-top: 20px;
 
 }
 
-.experience-projects > .sub, .sub{
+.experience-projects > .sub-a, .experience-projects > .sub-b, .sub{
     margin-top: 10px;
     color: #cfa4a4;
     letter-spacing: 2px;
     padding-left: 5px;
     font-size: 1.2rem;
 }
-.experience-projects > .sub2, .sub2 {
+.experience-projects > .sub, .sub2, .sub3 {
     margin-top: 5px;
     color: #cfa4a4;
     letter-spacing: 2px;
     padding-left: 5px;
     font-size: 1rem;
+
 }
 .education-skills{
-    color: none;
+    margin-top: 4%;
+        
+}
+
+.education-skills > .skills{
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+.education-skills > .skills-list-headers{
+    color: #c0bbbb;
+    font-size: 1.5rem;
+    margin-top: 15px;
+    font-weight: lighter;
+}
+.education-skills > .list {
+    padding-top: 5px;
+    color:white;
+    padding-left: 0;
+
+}
+
+.education-skills > .beta {
+    text-align: left;
+}
+
+.education-skills > h2, .sub, .sub2, .sub3, .center1 {
+text-align: left;
+
+}
+
+.more-info {
+    width: 100%;
+    border-top: 3px solid rgb(71, 70, 70);
+    grid-column: 1 /-1;
+    padding-left: 10px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.more-info > .first {
+    margin-left: 0;
+}
+
+.more-info > .second {
+    margin-right: 29%;
+}
+
+.more-info > .head {
+    margin-top: 10px;
+}
+
+.more-info > .head > h3 {
+    color: wheat;
+    margin-bottom: 10px;
+}
+
+.more-info > .head > li {
+    margin-top: 5px;
+    list-style: none;
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
 }
