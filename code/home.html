@@ -4,9 +4,38 @@
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Document</title>
+    <style>
+        .icons{
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+        }
+        .link{
+            height: 100px;
+            width: 100px;
+            border-radius: 35px;
+            text-align: center;
+            line-height: 80px;
+        }
+
+        a i {
+            transition: all 0.3s linear;
+        }
+
+        a:hover i {
+            transform: scale(1.5);
+        }
+
+        .fab{
+            background-color: none;
+            font-size: 3rem;
+            margin-right: px;
+            color: blue;
+        }
+    </style>
 </head>
 <body class="home-file">
     <div class="intro-fase">
@@ -17,16 +46,13 @@
             I am a frontend web developer. I can provide clean code and and pixel perfect design <br> also make responsive and interactive websites with web animations
         </p>
         <div class="icons">
-
-            <ul class="icons-desc">
-                <li><a href="https://github.com/Silentrovert007" target="_blank"><i class="fab fa-github fa-sm"></i></a></li>
-                <li><a href="https://linkedin.com/in/gaspar-mario-chichava"  target="_blank"><i class="fab fa-linkedin fa-sm"></i></a></li>
-                <li><a href="https://medium.com/@gaspar.mario-chichava" target="_blank"><i class="fab fa-medium fa-sm"></i></a></li>
-            </ul>  
-
-        </div>
             
+                <a class="link" href="https://github.com/Silentrovert007" target="_blank"><i class="fab fa-github fa-sm"></i></a>
 
+                <a class="link" href="https://linkedin.com/in/gaspar-mario-chichava" target="_blank"><i class="fab fa-linkedin fa-sm"></i></a>
+
+                <a class="link" href="https://medium.com/@gaspar.mario-chichava" target="_blank"><i class="fab fa-medium fa-sm"></i></a>
+        </div>
     </div>
 </body>
 </html>

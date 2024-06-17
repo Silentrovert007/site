@@ -39,8 +39,24 @@
         </div>
 
         <div class="main">
-            <iframe name="mainIframe" src="resume.html" frameborder="0"></iframe>
+            <iframe name="mainIframe" src="home.html" frameborder="0"></iframe>
         </div>
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const links = document.querySelectorAll('.links > li > a');
+            
+            links.forEach(link => {
+                link.addEventListener('click', function() {
+                    // Remove the active class from all links
+                    links.forEach(link => link.classList.remove('active'));
+                    
+                    // Add the active class to the clicked link
+                    this.classList.add('active');
+                });
+            });
+        });
+    </script>
 </body>
 </html>
