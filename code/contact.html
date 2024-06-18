@@ -3,25 +3,247 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact Form</title>
+    <style>
+        html {
+            font-family: Helvetica, sans-serif;
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        .contact {
+            padding: 10px;
+        }
+
+        button {
+            overflow: visible;
+        }
+
+        button, select {
+            text-transform: none;
+        }
+
+        button, input, select, textarea {
+            color: blue;
+            font: inherit;
+            margin: 0;
+        }
+
+        input {
+            line-height: normal;
+        }
+
+        textarea {
+            overflow: auto;
+        }
+
+        #container {
+            margin: 0 auto;
+            max-width: 650px;
+            max-height: 650px;
+            position: relative;
+            top: 20vh;
+            width: 100%;
+        }
+
+        form {
+            padding: 45px;
+        }
+
+        h2 {
+            color: blue;
+            font-size: 32px;
+            font-weight: 700;
+            letter-spacing: 7px;
+            text-align: center;
+        }
+
+        .email {
+            float: right;
+            width: 45%;
+        }
+
+        input[type='text'], [type='email'], select, textarea {
+            background: none;
+            border: none;
+            border-bottom: solid 2px #122293;
+            color: #122293;
+            font-size: 1.000em;
+            font-weight: 400;
+            letter-spacing: 1px;
+            margin: 0em 0 1.875em 0;
+            padding: 0 0 0.875em 0;
+            width: 100%;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -ms-box-sizing: border-box;
+            -o-box-sizing: border-box;
+            box-sizing: border-box;
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            -ms-transition: all 0.3s;
+            -o-transition: all 0.3s;
+            transition: all 0.3s;
+        }
+
+        input[type='text']:focus, [type='email']:focus, textarea:focus {
+            outline: none;
+            padding: 0 0 0.875em 0;
+        }
+
+        .message {
+            float: none;
+        }
+
+        .name {
+            float: left;
+            width: 45%;
+        }
+
+        select::-ms-expand {
+            display: none;
+        }
+
+        .subject {
+            width: 100%;
+        }
+
+        textarea {
+            line-height: 150%;
+            height: 150px;
+            resize: none;
+            width: 100%;
+        }
+
+        ::-webkit-input-placeholder {
+            color: #122293;
+        }
+
+        #form_button {
+            background: none;
+            border: solid 2px #122293;
+            color: #122293;
+            cursor: pointer;
+            display: inline-block;
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            outline: none;
+            padding: 20px 35px;
+            text-transform: uppercase;
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            -ms-transition: all 0.3s;
+            -o-transition: all 0.3s;
+            transition: all 0.3s;
+        }
+
+        .submit {
+            text-align: center;
+        }
+
+        #form_button:hover {
+            background: #122293;
+            color: #ffffff;
+        }
+
+        .message2{
+            display: none;
+            text-align: center;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+        .success-message {
+            color: green;
+        }
+        .error-message {
+            color: red;
+        }
+
+        .loading {
+            border: 4px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 4px solid #122293;
+            width: 20px;
+            height: 20px;
+            animation: spin 2s linear infinite;
+            display: inline-block;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .submit .loading {
+            margin-left: 10px;
+            vertical-align: middle;
+        }
+
+    </style>
 </head>
-
-<style>
-    body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    h1 {
-        position: absolute;
-        top: 40%;
-        text-transform: capitalize;
-    }
-</style>
 <body>
-    <h1 style="font-size: 3rem; font-weight: bolder; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color: white;">
-        building...
-    </h1>
+    <div class="contact">
+        <div id="container">
+            <h2>Contact</h2>
+            <form id="contact_form" action="https://script.google.com/macros/s/AKfycbyB-jnFwlykZkvcv-hxHJTCPzD1kMRPuIn2e34nlS1ADlcsUSqUS8nkg9jAVrYfKvJh/exec" method="POST">
+                <div class="name">
+                    <input type="text" placeholder="Name" name="Name" id="name_input" required>
+                </div>
+                <div class="email">
+                    <input type="email" placeholder="E-mail" name="Email" id="email_input" required>
+                </div>
+                <div class="subject">
+                    <select name="Subject" id="subject_input" required>
+                        <option disabled hidden selected>Subject</option>
+                        <option>Just sayin' "hi"!</option>
+                        <option>Quick question.</option>
+                        <option>How about a commission?</option>
+                    </select>
+                </div>
+                <div class="message">
+                    <textarea name="Message" placeholder="Message" id="message_input" cols="30" rows="5" required></textarea>
+                </div>
+                <div class="submit">
+                    <button type="submit" id="form_button">Submit</button>
+                    <div class="loading" id="loading_spinner"></div>
+                </div>
+            </form>
+
+            <div class="message2 success-message" id="success_message">Message submitted successfully! Redirecting to home page...</div>
+            <div class="message2 error-message" id="error_message">Failed to submit message. Please verify your connection and try again.</div>
+        </div>
+    </div>
+
+
+    <script>
+        document.getElementById('contact_form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const formData = new FormData(this);
+            const loadingSpinner = document.getElementById('loading_spinner');
+
+            // Show the loading spinner
+            loadingSpinner.style.display = 'inline-block';
+
+            fetch('https://script.google.com/macros/s/AKfycbyB-jnFwlykZkvcv-hxHJTCPzD1kMRPuIn2e34nlS1ADlcsUSqUS8nkg9jAVrYfKvJh/exec', {
+                method: 'POST',
+                body: formData,
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('success_message').style.display = 'block';
+                loadingSpinner.style.display = 'none';
+                setTimeout(function() {
+                    window.location.href = 'home.html';
+                }, 4000);
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                document.getElementById('error_message').style.display = 'block';
+                loadingSpinner.style.display = 'none';
+                setTimeout(function() {
+                    document.getElementById('error_message').style.display = 'none';
+                }, 4000);
+            });
+        });
+    </script>
 </body>
 </html>
