@@ -93,9 +93,6 @@
 
 .main {
     position: relative;
-    background-image: url(../assets/backround.jpeg);
-    background-repeat: no-repeat;
-    background-size:115vmax;
 }
 
 .main iframe {
@@ -105,6 +102,10 @@
     width: 100%;
     height: 100%;
     border: none;
+    background-image: url(../assets/bettera.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     
     
 }
